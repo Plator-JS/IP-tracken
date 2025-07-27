@@ -1,7 +1,7 @@
 import requests
 
 def check_ip(ip):
-    print(f"🔎 IP-Adresse analysieren: {ip}\n")
+    print(f"IP-Adresse analysieren: {ip}\n")
     
     url = f"https://ipinfo.io/{ip}/json"
     response = requests.get(url)
@@ -31,5 +31,5 @@ def check_ip(ip):
     else:
         print("Kein Standort verfügbar.")
 
-ip_input = input("🔢 Gib eine IP-Adresse ein: ")
+ip_input = input("Gib eine IP-Adresse ein: ")
 check_ip(ip_input)
